@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 import './LoveLetter.css';
-import audioFile from './kushi.mp3';
+import audioFile from './UnatundeGunde.mp3';
 
 const LoveLetter = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -35,10 +35,10 @@ const LoveLetter = () => {
       <div className="flap"></div>
       <div className="body"></div>
       <div className={`letter ${isFullSize ? 'fullSize' : ''}`}>
-        mah dear kundanapu bomma🖤,<br />
-        never have i been so blessed as to fall in love with someone as wonderful as you...<br />i loveeee youuuu :)<br />
-        always yours,<br />
-        @niihaaarrrr
+        My Dear Silent🖤,<br /><br></br>
+        I See You In Daily But U Dont See To Me,<br></br> I Follow You Daily But U Dont Observe Me,<br />I Think I'm In Love With You..🖤🖤<br />
+        <br />
+        
       </div>
       <audio ref={audioRef} src={audioFile} onError={(e) => console.error('Audio error:', e.message)} />
     </div>
@@ -46,3 +46,4 @@ const LoveLetter = () => {
 };
 
 export default LoveLetter;
+
